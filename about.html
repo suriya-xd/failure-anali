@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>This is a simple website created to demonstrate basic HTML, CSS, and JavaScript integration.</p>
+        <p>We focus on clean code and simple design.</p>
+
+        <nav>
+            <a href="welcome.html">Back to Home</a>
+        </nav>
+
+        <button id="logout-btn" class="secondary">Logout</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
